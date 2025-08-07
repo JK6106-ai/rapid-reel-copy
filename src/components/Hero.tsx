@@ -14,7 +14,7 @@ const Hero = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-hero text-foreground mb-6 animate-slide-up">
+          <h1 className="text-hero text-primary mb-6 animate-slide-up">
             Copy + Reels: Your Content,{" "}
             <span className="text-gradient">Accelerated</span>
           </h1>
