@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 text-primary" />
-              <span className="font-semibold">100+ Happy Creators</span>
+              <span className="font-semibold">50+ Happy Creators</span>
             </div>
             <div className="flex items-center gap-2">
               <Zap className="w-5 h-5 text-primary" />
@@ -49,13 +49,22 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{
           animationDelay: '0.6s'
         }}>
-            <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground font-bold px-8 py-4 rounded-lg shadow-primary transition-all duration-300 hover:scale-105 animate-pulse-glow group">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary-hover text-primary-foreground font-bold px-8 py-4 rounded-lg shadow-primary transition-all duration-300 hover:scale-105 animate-pulse-glow group"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Get Your Content in 48 Hours
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105">
-              View Portfolio
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Get Started
             </Button>
           </div>
 

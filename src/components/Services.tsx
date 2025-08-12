@@ -1,13 +1,19 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PenTool, Video, Zap, Clock, Target, TrendingUp } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleChoosePackage = (title: string, price: string) => {
+    navigate(`/payment?package=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}`);
+  };
   const services = [
     {
       icon: <PenTool className="w-8 h-8 text-primary" />,
       title: "Copywriting for Creators",
-      price: "₹999",
+      price: "₹1,299",
       description: "Convert viewers into engaged followers with compelling copy that speaks your brand voice.",
       features: [
         "Video scripts for Reels/Shorts",
@@ -22,7 +28,7 @@ const Services = () => {
     {
       icon: <Video className="w-8 h-8 text-primary" />,
       title: "Reels/Shorts Video Editing",
-      price: "₹999", 
+      price: "₹1,299",
       description: "Transform raw footage into scroll-stopping short-form content that drives engagement.",
       features: [
         "Fast-paced cuts & transitions",
@@ -37,8 +43,8 @@ const Services = () => {
     {
       icon: <Zap className="w-8 h-8 text-primary" />,
       title: "Hybrid Package",
-      price: "₹1,499",
-      originalPrice: "₹1,998",
+      price: "₹1,999",
+      originalPrice: "₹2,598",
       description: "The ultimate content solution - seamless integration of copy and video for maximum impact.",
       features: [
         "Complete copy + video package",
@@ -139,8 +145,9 @@ const Services = () => {
                       ? 'bg-primary hover:bg-primary-hover text-primary-foreground shadow-primary hover:scale-105'
                       : 'bg-secondary hover:bg-secondary/80 text-secondary-foreground'
                   }`}
+                  onClick={() => handleChoosePackage(service.title, service.price)}
                 >
-                  Choose This Package
+                  Choose Package
                 </Button>
               </CardContent>
             </Card>

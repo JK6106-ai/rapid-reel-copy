@@ -174,9 +174,9 @@ ${formData.name}
                       className="w-full mt-1 px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                     >
                       <option value="">Select a service</option>
-                      <option value="Copywriting Only (₹999)">Copywriting Only (₹999)</option>
-                      <option value="Video Editing Only (₹999)">Video Editing Only (₹999)</option>
-                      <option value="Hybrid Package (₹1,499)">Hybrid Package (₹1,499) - Most Popular</option>
+                      <option value="Copywriting Only (₹1,299)">Copywriting Only (₹1,299)</option>
+                      <option value="Video Editing Only (₹1,299)">Video Editing Only (₹1,299)</option>
+                      <option value="Hybrid Package (₹1,999)">Hybrid Package (₹1,999) - Most Popular</option>
                       <option value="Premium Package (₹2,499)">Premium Package (₹2,499)</option>
                       <option value="Custom Quote">Custom Quote Needed</option>
                     </select>
@@ -192,9 +192,8 @@ ${formData.name}
                         onChange={handleInputChange}
                         className="w-full mt-1 px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                       >
-                        <option value="">Select timeline</option>
-                        <option value="ASAP (24 hours)">ASAP (24 hours)</option>
-                        <option value="Standard (48 hours)">Standard (48 hours)</option>
+                      <option value="">Select timeline</option>
+                      <option value="Standard (48 hours)">Standard (48 hours)</option>
                         <option value="Next Week">Next Week</option>
                         <option value="Flexible">Flexible</option>
                       </select>
@@ -209,8 +208,8 @@ ${formData.name}
                         className="w-full mt-1 px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                       >
                         <option value="">Select budget</option>
-                        <option value="₹999 - Single Service">₹999 - Single Service</option>
-                        <option value="₹1,499 - Hybrid Package">₹1,499 - Hybrid Package</option>
+                        <option value="₹1,299 - Single Service">₹1,299 - Single Service</option>
+                        <option value="₹1,999 - Hybrid Package">₹1,999 - Hybrid Package</option>
                         <option value="₹2,499 - Premium Package">₹2,499 - Premium Package</option>
                         <option value="₹5,000+">₹5,000+ (Multiple Projects)</option>
                       </select>
@@ -296,7 +295,7 @@ ${formData.name}
                 <Button 
                   variant="outline" 
                   className="w-full justify-start"
-                  onClick={() => window.open('mailto:jatinkhandagale6106@gmail.com')}
+                  onClick={() => window.open('https://mail.google.com/mail/?view=cm&to=jatinkhandagale6106@gmail.com', '_blank')}
                 >
                   <Mail className="w-4 h-4 mr-2" />
                   Send Email
@@ -335,16 +334,16 @@ ${formData.name}
             Ready to Transform Your Content Strategy?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Join 100+ successful creators who've accelerated their growth with our hybrid content approach. 
+            Join 50+ successful creators who've accelerated their growth with our hybrid content approach. 
             Your next viral content is just 48 hours away.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
               className="bg-primary hover:bg-primary-hover text-primary-foreground font-bold px-8 py-3 rounded-lg shadow-primary transition-all duration-300 hover:scale-105"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Start Your Project Now
+              Start Your Project Today
             </Button>
             <Button 
               variant="outline"
