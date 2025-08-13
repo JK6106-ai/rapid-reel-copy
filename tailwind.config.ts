@@ -57,6 +57,7 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
 				heading: ['Montserrat', 'sans-serif'],
+				tight: ['Inter Tight', 'Inter', 'sans-serif'],
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
