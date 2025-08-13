@@ -5,7 +5,7 @@ import { Award, Users, Clock, Target, PenTool, Video, Lightbulb } from "lucide-r
 
 const About = () => {
   const stats = [
-    { icon: <Users className="w-6 h-6" />, number: "100+", label: "Happy Creators" },
+    { icon: <Users className="w-6 h-6" />, number: "50+", label: "Happy Creators" },
     { icon: <Clock className="w-6 h-6" />, number: "48", label: "Hour Delivery" },
     { icon: <Target className="w-6 h-6" />, number: "95%", label: "Client Satisfaction" },
     { icon: <Award className="w-6 h-6" />, number: "2+", label: "Years Experience" }
