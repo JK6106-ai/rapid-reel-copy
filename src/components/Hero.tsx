@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/20">
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Headline */}
@@ -26,7 +26,7 @@ const Hero = () => {
           }}>
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-10 py-4 rounded-lg transition-all duration-300 hover:scale-105 group font-tight"
+              className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-10 py-4 rounded-lg shadow-primary transition-all duration-300 hover:scale-105 animate-pulse-glow group font-tight"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Get Your Content in 48 Hours
