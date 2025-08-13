@@ -95,7 +95,7 @@ const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className={`relative transition-all duration-300 hover:scale-105 hover:shadow-card ${
+              className={`relative h-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-card ${
                 service.highlight 
                   ? 'border-2 border-primary bg-gradient-card shadow-primary' 
                   : 'bg-card hover:shadow-lg'
@@ -129,8 +129,8 @@ const Services = () => {
                 </CardDescription>
               </CardHeader>
               
-              <CardContent>
-                <ul className="space-y-3 mb-6">
+              <CardContent className="flex flex-col flex-grow">
+                <ul className="space-y-3 mb-6 flex-grow">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
@@ -140,7 +140,7 @@ const Services = () => {
                 </ul>
                 
                 <Button 
-                  className={`w-full font-semibold transition-all duration-300 ${
+                  className={`w-full font-semibold transition-all duration-300 mt-auto ${
                     service.highlight
                       ? 'bg-primary hover:bg-primary-hover text-primary-foreground shadow-primary hover:scale-105'
                       : 'bg-secondary hover:bg-secondary/80 text-secondary-foreground'
